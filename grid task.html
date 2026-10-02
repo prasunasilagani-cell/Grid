@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            height: 500px;
+            width: 1000px;
+            display: grid;
+            grid-template-columns: 200px  200px 200px 400px;
+            grid-template-rows: 100px 200px 200px 100px;
+        }
+        .box{
+            background-color: white;
+            border: 2px solid white;
+             color: white;
+             font-size: 25px;
+             font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+           margin: 5px;
+        }
+        .box1{
+            background-color: rgb(93, 88, 88);
+            grid-column: 1/5;
+        }
+        .box2{
+            background-color:skyblue ;
+            grid-column: 1/3;
+        }
+        .box3{
+            background-color: rgb(41, 222, 41);
+        }
+        .box4{
+            background-color: red;
+            grid-row:2/4;
+            grid-column:4/5 ;
+        }
+        .box5{
+            background-color: violet;
+        }
+        .box6{
+            background-color: orange;
+        }
+        .box7{
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box box1">Headline</div>
+        <div class="box box2">News 1</div>
+        <div class="box box3">News 2</div>
+        <div class=" box box4">Advertisements</div>
+        <div class=" box box5">News3</div>
+        <div class="box box6">News 4</div>
+        <div class="box box7">News 5</div>
+        <div class=" box box1">Footer</div>
+    </div>
+</body>
+</html>
